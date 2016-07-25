@@ -4,13 +4,20 @@
 		<name>keyMap</name>
 		<identifier>keyMap</identifier>
 
+		<!-- 修飾キー -->
+		<autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::CONTROL_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::JIS_COLON, KeyCode::OPTION_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::SHIFT_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_R</autogen>
+
+		<!-- 機能キー -->
 		<autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::FN</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_EISUU,ModifierFlag::COMMAND_L, KeyCode::DELETE, ModifierFlag::OPTION_R</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_EISUU,ModifierFlag::OPTION_R, KeyCode::DELETE, ModifierFlag::FN</autogen>
+		<autogen>__KeyToKey__ KeyCode::RETURN, KeyCode::ESCAPE</autogen>
+		<autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::DELETE</autogen>
+		<autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::RETURN</autogen>
 		<autogen>__KeyToKey__ KeyCode::L, ModifierFlag::OPTION_R, KeyCode::VK_JIS_BACKSLASH</autogen>
 
-		<autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT</autogen>
-
+		<!-- アルファベット -->
 		<autogen>__KeyToKey__ KeyCode::Q, KeyCode::MINUS</autogen>
 		<autogen>__KeyToKey__ KeyCode::W, KeyCode::COMMA</autogen>
 		<autogen>__KeyToKey__ KeyCode::E, KeyCode::DOT</autogen>
@@ -33,7 +40,7 @@
 		<autogen>__KeyToKey__ KeyCode::K, KeyCode::T</autogen>
 		<autogen>__KeyToKey__ KeyCode::L, KeyCode::N</autogen>
 		<autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::S</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_COLON, KeyCode::OPTION_R</autogen>
+
 
 		<autogen>__KeyToKey__ KeyCode::Z, KeyCode::SLASH</autogen>
 		<autogen>__KeyToKey__ KeyCode::X, KeyCode::Q</autogen>
@@ -46,13 +53,13 @@
 		<autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::K</autogen>
     	<autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::JIS_ATMARK</autogen>
 
-    	<autogen>__KeyToKey__ KeyCode::JIS_KANA, ModifierFlag::OPTION_R, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
-		<autogen>__KeyToKey__ KeyCode::RETURN, KeyCode::ESCAPE</autogen>
-		<autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
-		<autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::CONTROL_L</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::DELETE</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::RETURN</autogen>
-		<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::SHIFT_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_R</autogen>
 
+		<!-- CONTROL -->
+		<autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+
+		<autogen>__KeyToKey__ KeyCode::JIS_EISUU, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::OPTION_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::JIS_EISUU, ModifierFlag::OPTION_R, KeyCode::DELETE, ModifierFlag::FN</autogen>
+		<autogen>__KeyToKey__ KeyCode::JIS_KANA, ModifierFlag::L, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
 	</item>
+
 </root>
