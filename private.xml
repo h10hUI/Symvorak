@@ -4,18 +4,91 @@
 		<name>keyMap</name>
 		<identifier>keyMap</identifier>
 
+		<!-- 新しい修飾キーの設定 -->
+		<modifierdef>SPECIAL</modifierdef>
+
+		<!-- CURSOL -->
+		<!-- 通常移動 -->
+		<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+		<autogen>__KeyToKey__ KeyCode::K, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+		<autogen>__KeyToKey__ KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+		<autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+		<!-- 単語移動 -->
+		<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::COMMAND_R, KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::COMMAND_R, KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_R</autogen>
+		<!-- 全距離移動 -->
+		<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::OPTION_R, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::K, ModifierFlag::OPTION_R, KeyCode::CURSOR_UP, ModifierFlag::COMMAND_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::L, ModifierFlag::OPTION_R, KeyCode::CURSOR_DOWN, ModifierFlag::COMMAND_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::OPTION_R, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+
+		<!-- ユーティリティショートカット -->
+		<autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::CONTROL_L, KeyCode::Z, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::W, ModifierFlag::CONTROL_L, KeyCode::W, ModifierFlag::COMMAND_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::A, ModifierFlag::COMMAND_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::D, ModifierFlag::COMMAND_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::C, ModifierFlag::CONTROL_L, KeyCode::C, ModifierFlag::COMMAND_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::X, ModifierFlag::CONTROL_L, KeyCode::X, ModifierFlag::COMMAND_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::F, ModifierFlag::CONTROL_L, KeyCode::F, ModifierFlag::COMMAND_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::V, ModifierFlag::CONTROL_L, KeyCode::V, ModifierFlag::COMMAND_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_L, KeyCode::S, ModifierFlag::COMMAND_R</autogen>
+		<autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::Z, ModifierFlag::COMMAND_R</autogen>
+
+		<!-- COMMAND -->
+		<!-- 単語削除 -->
+		<autogen>__KeyToKey__ KeyCode::JIS_EISUU, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::OPTION_R</autogen>
+
+		<!-- SPECIAL -->
+		<!-- 全角半角 -->
+		<autogen>__KeyToKey__ KeyCode::JIS_KANA, ModifierFlag::SPECIAL, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+
+		<!-- 特殊文字 -->
+		<autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::SPECIAL,  KeyCode::1, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::W, ModifierFlag::SPECIAL,  KeyCode::SLASH, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::E, ModifierFlag::SPECIAL,  KeyCode::2, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::R, ModifierFlag::SPECIAL,  KeyCode::7, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::T, ModifierFlag::SPECIAL,  KeyCode::JIS_ATMARK</autogen>
+		<autogen>__KeyToKey__ KeyCode::U, ModifierFlag::SPECIAL,  KeyCode::5, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::I, ModifierFlag::SPECIAL,  KeyCode::6, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::O, ModifierFlag::SPECIAL,  KeyCode::JIS_YEN, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::P, ModifierFlag::SPECIAL,  KeyCode::JIS_HAT</autogen>
+
+		<autogen>__KeyToKey__ KeyCode::A, ModifierFlag::SPECIAL,  KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::S, ModifierFlag::SPECIAL,  KeyCode::SEMICOLON, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::D, ModifierFlag::SPECIAL,  KeyCode::8, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::F, ModifierFlag::SPECIAL,  KeyCode::9, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::G, ModifierFlag::SPECIAL,  KeyCode::JIS_COLON, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::H, ModifierFlag::SPECIAL,  KeyCode::JIS_HAT, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::SPECIAL,  KeyCode::JIS_BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::K, ModifierFlag::SPECIAL,  KeyCode::JIS_BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::L, ModifierFlag::SPECIAL,  KeyCode::VK_JIS_BACKSLASH</autogen>
+		<autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::SPECIAL,  KeyCode::BACKQUOTE</autogen>
+
+		<autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::SPECIAL, KeyCode::JIS_COLON</autogen>
+		<autogen>__KeyToKey__ KeyCode::X, ModifierFlag::SPECIAL,  KeyCode::3, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::C, ModifierFlag::SPECIAL,  KeyCode::JIS_BRACKET_LEFT</autogen>
+		<autogen>__KeyToKey__ KeyCode::V, ModifierFlag::SPECIAL,  KeyCode::JIS_BRACKET_RIGHT</autogen>
+		<autogen>__KeyToKey__ KeyCode::N, ModifierFlag::SPECIAL,  KeyCode::4, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::M, ModifierFlag::SPECIAL,  KeyCode::COMMA, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::SPECIAL,  KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::SPECIAL,  KeyCode::JIS_UNDERSCORE</autogen>
+
+
 		<!-- 修飾キー -->
-		<autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
-		<autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::CONTROL_L</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_COLON, KeyCode::OPTION_R</autogen>
-		<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::SHIFT_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_R</autogen>
+		<!-- SPECIAL -->
+		<autogen>__KeyToKey__ KeyCode::JIS_COLON, KeyCode::VK_MODIFIER_SPECIAL</autogen>
+		<!-- OPTION -->
+		<autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_R</autogen>
 
 		<!-- 機能キー -->
+		<!-- FUNCTION -->
 		<autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::FN</autogen>
+		<!-- ESCAPE -->
 		<autogen>__KeyToKey__ KeyCode::RETURN, KeyCode::ESCAPE</autogen>
+		<!-- DELETE -->
 		<autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::DELETE</autogen>
+		<!-- RETURN -->
 		<autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::RETURN</autogen>
-		<autogen>__KeyToKey__ KeyCode::L, ModifierFlag::OPTION_R, KeyCode::VK_JIS_BACKSLASH</autogen>
 
 		<!-- アルファベット -->
 		<autogen>__KeyToKey__ KeyCode::Q, KeyCode::MINUS</autogen>
@@ -29,7 +102,6 @@
 		<autogen>__KeyToKey__ KeyCode::O, KeyCode::R</autogen>
 		<autogen>__KeyToKey__ KeyCode::P, KeyCode::L</autogen>
 		<autogen>__KeyToKey__ KeyCode::JIS_ATMARK, KeyCode::P</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_BRACKET_LEFT, KeyCode::J</autogen>
 
 		<autogen>__KeyToKey__ KeyCode::S, KeyCode::O</autogen>
 		<autogen>__KeyToKey__ KeyCode::D, KeyCode::E</autogen>
@@ -41,11 +113,10 @@
 		<autogen>__KeyToKey__ KeyCode::L, KeyCode::N</autogen>
 		<autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::S</autogen>
 
-
-		<autogen>__KeyToKey__ KeyCode::Z, KeyCode::SLASH</autogen>
+		<autogen>__KeyToKey__ KeyCode::Z, KeyCode::SEMICOLON</autogen>
 		<autogen>__KeyToKey__ KeyCode::X, KeyCode::Q</autogen>
-		<autogen>__KeyToKey__ KeyCode::C, KeyCode::JIS_COLON</autogen>
-		<autogen>__KeyToKey__ KeyCode::V, KeyCode::SEMICOLON</autogen>
+		<autogen>__KeyToKey__ KeyCode::C, KeyCode::J</autogen>
+		<autogen>__KeyToKey__ KeyCode::V, KeyCode::SLASH</autogen>
 		<autogen>__KeyToKey__ KeyCode::B, KeyCode::X</autogen>
 		<autogen>__KeyToKey__ KeyCode::N, KeyCode::B</autogen>
 		<autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::W</autogen>
@@ -54,12 +125,6 @@
     	<autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::JIS_ATMARK</autogen>
 
 
-		<!-- CONTROL -->
-		<autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
-
-		<autogen>__KeyToKey__ KeyCode::JIS_EISUU, ModifierFlag::CONTROL_L, KeyCode::DELETE, ModifierFlag::OPTION_R</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_EISUU, ModifierFlag::OPTION_R, KeyCode::DELETE, ModifierFlag::FN</autogen>
-		<autogen>__KeyToKey__ KeyCode::JIS_KANA, ModifierFlag::L, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
 	</item>
 
 </root>
