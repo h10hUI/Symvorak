@@ -47,8 +47,7 @@
 		<autogen>__KeyToKey__ KeyCode::W, ModifierFlag::SPECIAL,  KeyCode::SLASH, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::E, ModifierFlag::SPECIAL,  KeyCode::2, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::R, ModifierFlag::SPECIAL,  KeyCode::7, ModifierFlag::SHIFT_L</autogen>
-		<autogen>__KeyToKey__ KeyCode::T, ModifierFlag::SPECIAL,  KeyCode::JIS_ATMARK</autogen>
-		<autogen>__KeyToKey__ KeyCode::U, ModifierFlag::SPECIAL,  KeyCode::5, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::T, ModifierFlag::SPECIAL,  KeyCode::3, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::I, ModifierFlag::SPECIAL,  KeyCode::6, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::O, ModifierFlag::SPECIAL,  KeyCode::JIS_YEN, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::P, ModifierFlag::SPECIAL,  KeyCode::JIS_HAT</autogen>
@@ -61,13 +60,14 @@
 		<autogen>__KeyToKey__ KeyCode::H, ModifierFlag::SPECIAL,  KeyCode::JIS_HAT, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::J, ModifierFlag::SPECIAL,  KeyCode::JIS_BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::K, ModifierFlag::SPECIAL,  KeyCode::JIS_BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
-		<autogen>__KeyToKey__ KeyCode::L, ModifierFlag::SPECIAL,  KeyCode::VK_JIS_BACKSLASH</autogen>
+		<autogen>__KeyToKey__ KeyCode::L, ModifierFlag::SPECIAL,  KeyCode::JIS_COLON</autogen>
 		<autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::SPECIAL,  KeyCode::BACKQUOTE</autogen>
 
-		<autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::SPECIAL, KeyCode::JIS_COLON</autogen>
-		<autogen>__KeyToKey__ KeyCode::X, ModifierFlag::SPECIAL,  KeyCode::3, ModifierFlag::SHIFT_L</autogen>
+		<autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::SPECIAL, KeyCode::VK_JIS_BACKSLASH</autogen>
+		<autogen>__KeyToKey__ KeyCode::X, ModifierFlag::SPECIAL,  KeyCode::JIS_ATMARK</autogen>
 		<autogen>__KeyToKey__ KeyCode::C, ModifierFlag::SPECIAL,  KeyCode::JIS_BRACKET_LEFT</autogen>
 		<autogen>__KeyToKey__ KeyCode::V, ModifierFlag::SPECIAL,  KeyCode::JIS_BRACKET_RIGHT</autogen>
+		<autogen>__KeyToKey__ KeyCode::B, ModifierFlag::SPECIAL,  KeyCode::5, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::N, ModifierFlag::SPECIAL,  KeyCode::4, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::M, ModifierFlag::SPECIAL,  KeyCode::COMMA, ModifierFlag::SHIFT_L</autogen>
 		<autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::SPECIAL,  KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
@@ -113,10 +113,10 @@
 		<autogen>__KeyToKey__ KeyCode::L, KeyCode::N</autogen>
 		<autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::S</autogen>
 
-		<autogen>__KeyToKey__ KeyCode::Z, KeyCode::SEMICOLON</autogen>
+		<autogen>__KeyToKey__ KeyCode::Z, KeyCode::SLASH</autogen>
 		<autogen>__KeyToKey__ KeyCode::X, KeyCode::Q</autogen>
 		<autogen>__KeyToKey__ KeyCode::C, KeyCode::J</autogen>
-		<autogen>__KeyToKey__ KeyCode::V, KeyCode::SLASH</autogen>
+		<autogen>__KeyToKey__ KeyCode::V, KeyCode::SEMICOLON</autogen>
 		<autogen>__KeyToKey__ KeyCode::B, KeyCode::X</autogen>
 		<autogen>__KeyToKey__ KeyCode::N, KeyCode::B</autogen>
 		<autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::W</autogen>
