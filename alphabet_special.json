@@ -592,7 +592,9 @@
                     },
                     "to": [
                         {
-                            "key_code": "hyphen"
+                            "key_code": "7",
+                            "modifiers": [
+                                "shift"
                         }
                     ]
                 },
@@ -640,7 +642,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "y"
+                            "key_code": "p"
                         }
                     ]
                 },
@@ -656,7 +658,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "z"
+                            "key_code": "y"
                         }
                     ]
                 },
@@ -737,22 +739,6 @@
                     "to": [
                         {
                             "key_code": "l"
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "open_bracket",
-                        "modifiers": {
-                            "optional": [
-                                "shift"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "p"
                         }
                     ]
                 },
@@ -912,7 +898,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "slash"
+                            "key_code": "semicolon"
                         }
                     ]
                 },
@@ -960,7 +946,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "quote"
+                            "key_code": "k"
                         }
                     ]
                 },
@@ -1025,38 +1011,6 @@
                     "to": [
                         {
                             "key_code": "v"
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "slash",
-                        "modifiers": {
-                            "optional": [
-                                "shift"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "k"
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "international1",
-                        "modifiers": {
-                            "optional": [
-                                "shift"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "open_bracket"
                         }
                     ]
                 }
