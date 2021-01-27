@@ -592,9 +592,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "7",
-                            "modifiers": [
-                                "shift"
+                            "key_code": "hyphen"
                         }
                     ]
                 },
@@ -1011,6 +1009,22 @@
                     "to": [
                         {
                             "key_code": "v"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "slash",
+                        "modifiers": {
+                            "optional": [
+                                "shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "z"
                         }
                     ]
                 }
