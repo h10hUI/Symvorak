@@ -141,6 +141,24 @@
                         }
                     ],
                     "from": {
+                        "key_code": "y"
+                    },
+                    "to": [
+                        {
+                            "key_code": "quote"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "symbol",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
                         "key_code": "i"
                     },
                     "to": [
@@ -373,7 +391,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "semicolon"
+                            "key_code": "slash"
                         }
                     ]
                 },
@@ -1025,6 +1043,22 @@
                     "to": [
                         {
                             "key_code": "z"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "international1",
+                        "modifiers": {
+                            "optional": [
+                                "shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "slash"
                         }
                     ]
                 }
