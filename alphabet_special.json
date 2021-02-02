@@ -585,7 +585,7 @@
                         }
                     ],
                     "from": {
-                        "key_code": "period"
+                        "key_code": "y"
                     },
                     "to": [
                         {
