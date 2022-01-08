@@ -141,11 +141,35 @@
                         }
                     ],
                     "from": {
+                        "key_code": "y"
+                    },
+                    "to": [
+                        {
+                            "key_code": "semicolon",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "symbol",
+                            "value": 1
+                        }
+                    ],
+                    "from": {
                         "key_code": "u"
                     },
                     "to": [
                         {
-                            "key_code": "quote"
+                            "key_code": "open_bracket",
+                            "modifiers": [
+                                "shift"
+                            ]
                         }
                     ]
                 },
@@ -244,10 +268,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "semicolon",
-                            "modifiers": [
-                                "shift"
-                            ]
+                            "key_code": "quote"
                         }
                     ]
                 },
@@ -409,11 +430,9 @@
                     },
                     "to": [
                         {
-                            "key_code": "open_bracket",
-                            "modifiers": [
-                                "shift"
-                            ]
+                            "key_code": "international1"
                         }
+
                     ]
                 },
                 {
@@ -572,24 +591,6 @@
                             "modifiers": [
                                 "shift"
                             ]
-                        }
-                    ]
-                },
-                {
-                    "type": "basic",
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "symbol",
-                            "value": 1
-                        }
-                    ],
-                    "from": {
-                        "key_code": "y"
-                    },
-                    "to": [
-                        {
-                            "key_code": "international1"
                         }
                     ]
                 }
